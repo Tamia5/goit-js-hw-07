@@ -15,8 +15,4 @@ const galleryItemsCardList = galleryItems
 // console.log(galleryItemsCardList);
 
 galleryListEl.insertAdjacentHTML('beforeend', galleryItemsCardList);
-galleryListEl.addEventListener('click', event => {
-    event.preventDefault();
-});
-
 let gallery = new SimpleLightbox('.gallery a', {captionsData: 'alt', captionsDelay: 250});
